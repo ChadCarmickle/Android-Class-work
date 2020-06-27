@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Android_ServiceAssignment</string>
+    <string name="Button">Start Music</string>
+    <string name="Stop">Stop Music</string>
+    <string name="text">Make sure your sound is on!</string>
+</resources>
