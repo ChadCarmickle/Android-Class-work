@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name"> Home Depot Paint App </string>
+    <string name="RoomHight">"Room Height "</string>
+    <string name="Room_Distance">Room Distance</string>
+    <string name="Numberofpaintcoat"># of coats of paint</string>
+    <string name="EnterAmt">Enter Amount...</string>
+    <string name="paintcoat">Amount of Paint Coats</string>
+    <string name="LogoSlogon">More Savings, more doing</string>
+    <string name="Applybtn">Apply</string>
+    <string name="HomeDepot">Home Depot</string>
+
+
+    <!-- String Entities for the dropbox -->
+    <string-array name="Paint_Spinner_Entities">
+        <item> Select Paint Colors  </item>
+        <item> Red  </item>
+        <item> Blue </item>
+        <item> Green </item>
+        <item> white  </item>
+        <item> black </item>
+
+        <!--  String entities for -->
+    </string-array>
+    <string name="title_activity_second_">Second_Activity</string>
+    <string name="newone">Back</string>
+    <string name="GalonAmt" >"You will need --- Gallon(s). "</string>
+    <string name="Coat">With using -- amount of coat(s).</string>
+</resources>

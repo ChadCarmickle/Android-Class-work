@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">St. Patrick\'s Day</string>
+    <string name="greeting">Hey there partner, my name is Scott</string>
+    <string name="Subtotl">Sub Total</string>
+    <string name="Tipamt">Tip Amount</string>
+    <string name="total">Total Amount</string>
+    <string name="lbTip">15%</string>
+    <string name="inputvalue">Enter Amount...</string>
+    <string name="Apply">Apply</string>
+    <string name="input">Enter Amount...</string>
+</resources>

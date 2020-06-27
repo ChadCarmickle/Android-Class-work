@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--***********************************************
+    *                                                 *
+    *             Title Widgets                       *
+    *                                                 *
+    ************************************************-->
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+
+        style="@style/Home_Depot_Font"
+        android:textColor="@color/TextColor"
+        android:text="@string/HomeDepot"
+        android:textSize="@dimen/TextSize_Logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LogoSlogan"
+        style="@style/Home_Depot_Font"
+        android:layout_width="400dp"
+        android:layout_height="22dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/LogoSlogon"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--***********************************************
+    *                                                 *
+    *             TextView Widgets                    *
+    *                                                 *
+    ************************************************-->
+
+    <!-- Line Separator for Room Height-->
+    <View
+        android:id="@+id/RoomHight_Line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="122dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Lbl_RoomHight"
+        style="@style/Home_Depot_Font"
+        android:layout_width="184dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+
+        android:text="@string/RoomHight"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Line Separator for Room Distacne-->
+    <View
+        android:id="@+id/RoomDistance_Line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/RoomHight_Line" />
+
+    <TextView
+        android:id="@+id/Lbl_Room_Distance"
+        style="@style/Home_Depot_Font"
+        android:layout_width="184dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/Room_Distance"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lbl_RoomHight" />
+
+    <!-- Line Separator for Paint Coat lbl-->
+    <View
+        android:id="@+id/Coat_Paint_Line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/RoomDistance_Line" />
+
+    <TextView
+        android:id="@+id/Lbl_PaintCoat"
+        style="@style/Home_Depot_Font"
+        android:layout_width="168dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/paintcoat"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lbl_Room_Distance" />
+
+    <!--***********************************************
+    *                                                 *
+    *             EditView Widgets                    *
+    *                                                 *
+    ************************************************-->
+
+
+    <EditText
+        android:id="@+id/Input_Height"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="88dp"
+
+        android:background="@android:color/transparent"
+        android:hint="@string/EnterAmt"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/TextColor"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toEndOf="@+id/Lbl_RoomHight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Input_Distance"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+
+        android:background="@android:color/transparent"
+        android:hint="@string/EnterAmt"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/TextColor"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toEndOf="@+id/Lbl_Room_Distance"
+        app:layout_constraintTop_toBottomOf="@+id/Input_Height" />
+
+    <EditText
+        android:id="@+id/Input_PaintCoat"
+        android:layout_width="180dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+
+        android:layout_marginTop="7dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/EnterAmt"
+        android:inputType="number"
+        android:textColorHint="@color/TextColor"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toEndOf="@+id/Lbl_PaintCoat"
+        app:layout_constraintTop_toBottomOf="@+id/Input_Distance" />
+
+        <!--***********************************************
+        *                                                 *
+        *             Button  Widget                      *
+        *                                                 *
+        ************************************************-->
+
+    <Button
+        android:id="@+id/ApplyBtn"
+        style="@style/Home_Depot_Font"
+        android:layout_width="160dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+
+
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/button_shadow"
+        android:gravity="center_horizontal"
+        android:text="@string/Applybtn"
+        android:textColor="@color/TextColor"
+        android:textSize="@dimen/TextSize_Logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Coat_Paint_Line" />
+
+    <!--***********************************************
+    *                                                 *
+    *             Picture Widget                      *
+    *                                                 *
+    ************************************************-->
+
+    <ImageView
+        android:id="@+id/LogoPicture"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="218dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ApplyBtn"
+        app:srcCompat="@drawable/logopicture" />
+
+    <!--***********************************************
+    *                                                 *
+    *             Spinner Widget                      *
+    *                                                 *
+    ************************************************-->
+
+    <Spinner
+        android:id="@+id/Paint_Selection_Spinner"
+        style="@style/Home_Depot_Font"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginTop="44dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Coat_Paint_Line" />
+
+    <!--***********************************************
+    *                                                 *
+    *             Background Widget                   *
+    *                                                 *
+    ************************************************-->
+
+
+    <ImageView
+        android:id="@+id/Black_background"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/Paint_Selection_Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Input_PaintCoat"
+        app:srcCompat="@drawable/black_background"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <ImageView
+        android:id="@+id/Blue_background"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/Paint_Selection_Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Input_PaintCoat"
+        app:srcCompat="@drawable/blue_background"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="346dp" />
+
+    <ImageView
+        android:id="@+id/Red_background"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/Paint_Selection_Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Input_PaintCoat"
+        app:srcCompat="@drawable/red_background"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <ImageView
+        android:id="@+id/Green_Background"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/Paint_Selection_Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Input_PaintCoat"
+        app:srcCompat="@drawable/green_background"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <ImageView
+        android:id="@+id/White_background"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/Paint_Selection_Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Input_PaintCoat"
+        app:srcCompat="@drawable/white_background"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+

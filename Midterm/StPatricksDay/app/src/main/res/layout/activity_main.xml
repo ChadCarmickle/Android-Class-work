@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--****************************************************
+    *                                                      *
+    *                     Images                           *
+    *                                                      *
+    *****************************************************-->
+    <ImageView
+        android:id="@+id/Scott_Picture"
+        style="@style/St_patrick_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leprechaun" />
+
+    <ImageView
+        android:id="@+id/ChatBubble"
+        android:layout_width="247dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat_bubble" />
+
+    <!--****************************************************
+    *                                                      *
+    *           TextViews                                  *
+    *                                                      *
+    *****************************************************-->
+
+    <TextView
+        android:id="@+id/Scott_Speech"
+        android:layout_width="178dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+
+        style="@style/St_patrick_font"
+        android:text="@string/greeting"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ChatBubble"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ChatBubble"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/lbl_SubTotal"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        style="@style/St_patrick_font"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/Subtotl"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scott_Picture" />
+
+    <!-- Line Separator for Paint Coat lbl-->
+    <View
+        android:id="@+id/Coat_Paint_Line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="340dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_tip"
+        android:layout_width="67dp"
+        android:layout_height="47dp"
+
+        style="@style/St_patrick_font"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Tipamt"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_SubTotal" />
+
+    <EditText
+        android:id="@+id/InputTotal"
+        android:layout_width="217dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="299dp"
+
+        style="@style/St_patrick_font"
+        android:hint="@string/input"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toEndOf="@+id/lbl_SubTotal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Lbl_TipAmt"
+        android:layout_width="87dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+
+        style="@style/St_patrick_font"
+        android:text="@string/lbTip"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintStart_toEndOf="@+id/lbl_tip"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_SubTotal" />
+
+
+    <!--****************************************************
+    *                                                      *
+    *                    Seek bar                          *
+    *                                                      *
+    *****************************************************-->
+    <SeekBar
+        android:id="@+id/TipSeekBar"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="44dp"
+
+        android:max="30"
+        app:layout_constraintStart_toEndOf="@+id/Lbl_TipAmt"
+        app:layout_constraintTop_toBottomOf="@+id/InputTotal" />
+
+    <Button
+        android:id="@+id/Apply_btn"
+        android:layout_width="115dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="120dp"
+
+        style="@style/St_patrick_font"
+        android:background="@drawable/button_shadow"
+        android:text="@string/Apply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Coat_Paint_Line" />
+
+</android.support.constraint.ConstraintLayout>

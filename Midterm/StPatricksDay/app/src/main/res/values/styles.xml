@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="App_Background_Color" parent="Theme.AppCompat">
+    <item name="android:windowBackground">@color/Background_Color</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    // St_patrick_font font
+    <style name="St_patrick_font" >
+        <item name="android:fontFamily">@font/st_patrick_font</item>
+    </style>
+</resources>
+

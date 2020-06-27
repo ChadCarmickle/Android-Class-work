@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="App_Background_Color" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/Background_Color</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="TextView_Fonts" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Button_Fonts" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+    // Home Depot font
+    <style name="Home_Depot_Font" >
+        <item name="android:fontFamily">@font/home_depot_xml_font</item>
+    </style>
+</resources>

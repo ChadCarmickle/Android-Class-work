@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Background for window background app-->
+    <color name="Background_Color">#ee7125 </color>
+
+    <!-- Background color for App Title -->
+    <color name="colorPrimaryDark">#ee7125 </color>
+
+    <color name="TextColor">#FFFFFF</color>
+
+    <color name="BtnColor">#ee7125</color>
+
+
+    <!-- Spinner box Colors -->
+    <color name="SpinnerBlack">#000000</color>
+    <color name="SpinnerWhite">#ffffff</color>
+    <color name="SpinnerRed">#FA0303</color>
+    <color name="SpinnerGreen">#10D618</color>
+    <color name="SpinnerBlue">#0524CE</color>
+
+</resources>
