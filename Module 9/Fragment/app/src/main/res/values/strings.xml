@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Fantasy Dice Game</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dicename">Random Dice Game!</string>
+    <string name="scorelbl">Score:</string>
+    <string name="UserScore">Your Score: 0</string>
+    <string name="BotScore">Computer\'s Score: 0</string>
+    <string name="clickme">Play Again?</string>
+    <string name="Tie">Tied : 0</string>
+    <string name="Us">User Score: 0</string>
+    <string name="BotScore5">Computer Score: 0</string>
+    <string name="dndS">Fantasy Dice Game</string>
+    <string name="restart">Retart Scores</string>
+</resources>
