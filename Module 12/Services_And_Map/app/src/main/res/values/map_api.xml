@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- My Key. -->
+
+    <string name="Map_key" translatable="false" >
+        AIzaSyCWosSbARijOxaAPCYExbEIuUb0rsQkqL8
+    </string>
+</resources>

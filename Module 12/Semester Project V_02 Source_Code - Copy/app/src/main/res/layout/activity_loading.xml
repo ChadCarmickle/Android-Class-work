@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadingActivity"
+    android:background="@color/Background">
+
+
+    <TextView
+        android:id="@+id/Logo_Text_Loading"
+        android:layout_width="335dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textview"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo_Loading" />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/MainGif"
+        android:layout_width="wrap_content"
+        android:layout_height="176dp"
+        android:layout_marginTop="344dp"
+        android:background="@color/Background"
+        android:src="@drawable/bmo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Logo_Loading"
+        android:layout_width="239dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Loading1Txt"
+        android:layout_width="303dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/load"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo_Text_Loading" />
+
+    <TextView
+        android:id="@+id/Loading2Txt"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/f"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo_Text_Loading" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ooo Media</string>
+    <string name="textview">Welcome to the Land of Ooo Media!</string>
+    <string name="load">Your App is loading...Please wait</string>
+    <string name="f">In the meantime Enjoy the gif!</string>
+</resources>
