@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Module 7 Assignment</string>
+    <string name="blanktext" />
+    <string name="enter_text">Enter Text</string>
+    <string name="ApplyBtn" />
+    <string name="Applybtn">Apply</string>
+    <string name="textsize">TextSize</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="text_color">Text Color</string>
+    <string name="blue">Blue</string>
+    <string name="black">Black</string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="cayn">Cayn</string>
+    <string name="pink">Pink</string>
+    <string name="gray">Gray</string>
+    <string name="magenta">Magenta</string>
+</resources>

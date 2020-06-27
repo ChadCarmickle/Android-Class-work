@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!--
+            Text Size
+    -->
+    <item android:id="@+id/TextSize"
+        android:title="@string/textsize"
+        app:showAsAction="never" >
+
+            <menu>
+                <item android:id="@+id/TextSize_Small"
+                    android:title="@string/small" />
+
+                <item android:id="@+id/TextSize_Medium"
+                    android:title="@string/medium" />
+
+                <item android:id="@+id/TextSize_Large"
+                    android:title="@string/large" />
+
+            </menu>
+    </item>
+
+    <!--
+            Text Color
+    -->
+    <item android:id="@+id/TextColor"
+        android:title="@string/text_color"
+        app:showAsAction="never" >
+
+            <menu>
+                <item
+                    android:id="@+id/TextColor_Blue"
+                    android:title="@string/blue" />
+
+                <item android:id="@+id/TextColor_Black"
+                    android:title="@string/black" />
+
+                <item android:id="@+id/TextColor_Red"
+                    android:title="@string/red" />
+
+                <item android:id="@+id/TextColor_Yellow"
+                    android:title="@string/yellow" />
+
+                <item android:id="@+id/TextColor_Green"
+                    android:title="@string/green" />
+
+                <item android:id="@+id/TextColor_Pink"
+                    android:title="@string/pink" />
+
+                <item android:id="@+id/TextColor_Cayn"
+                    android:title="@string/cayn" />
+
+                <item android:id="@+id/TextColor_Gray"
+                    android:title="@string/gray" />
+
+                <item android:id="@+id/TextColor_Magenta"
+                    android:title="@string/magenta" />
+
+            </menu>
+
+
+    </item>
+
+</menu>
