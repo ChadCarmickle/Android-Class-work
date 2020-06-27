@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Module 4 Tip Calculator </string>
+    <string name="BillAmt">Bill Amount</string>
+    <string name="Btn_Lbl_Minus">-</string>
+    <string name="Btn_Lbl_Plus">+</string>
+    <string name="Bill_Amount">Bill Amount</string>
+    <string name="Lbl_Percent">Percent</string>
+    <string name="Lbl_Tip">Tip</string>
+    <string name="Lbl_Total">Total</string>
+    <string name="Lbl_Round">Rounding</string>
+    <string name="Lbl_Person">Per Person</string>
+    <string name="Lbl_Apply">Apply</string>
+    <string name="Lbl_SplitBill">Split Bill?</string>
+    <string name="Lbl_Hint_InputBillAmt">Enter Amount</string>
+    <string name="Lbl_PercentNumber">0%</string>
+    <string name="Lbl_Tip_Number">$0.00</string>
+    <string name="Lbl_Total_Number">$0.00</string>
+    <string name="PerPersonAmount">$0.00</string>
+    <string name="Radio_None">None</string>
+    <string name="Radio_Tip">Tip</string>
+    <string name="Radio_Total">Total</string>
+
+
+    <string-array name="DropBox_Entities">
+        <item> Split the bill - No </item>
+        <item> Split the bill - 2 ways  </item>
+        <item> Split the bill - 3 ways </item>
+        <item> Split the bill - 4 ways </item>
+    </string-array>
+</resources>
