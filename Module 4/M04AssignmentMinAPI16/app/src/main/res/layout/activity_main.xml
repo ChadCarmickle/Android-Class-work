@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="392dp"
+        android:layout_height="690dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/Lbl_BillAmount"
+            android:layout_width="131dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:textSize="@dimen/TextSettings"
+            android:imeOptions="actionDone"
+            android:text="@string/Bill_Amount" />
+
+        <EditText
+            android:id="@+id/Input_Bill_Amount"
+            android:layout_width="196dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15sp"
+            android:gravity="center_vertical"
+            android:inputType="number|numberDecimal"
+            android:textSize="@dimen/TextSettings"
+            app:layout_columnSpan="3"
+            app:layout_row="0"
+            app:layout_rowSpan="6"
+            tools:hint="@string/Lbl_Hint_InputBillAmt" />
+
+        <TextView
+            android:id="@+id/Lbl_Percent"
+            android:layout_width="131dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Lbl_Percent"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/Percent_Number_Amount"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:text="@string/Lbl_PercentNumber"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="1"
+            android:gravity="center"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/Btn_Minus"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:text="@string/Btn_Lbl_Minus"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="2"
+            android:gravity="center"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/Btn_Plus"
+            android:textSize="@dimen/TextSettings"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:text="@string/Btn_Lbl_Plus"
+            app:layout_column="3"
+            app:layout_row="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/Lbl_Tip"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:text="@string/Lbl_Tip"
+            android:textSize="@dimen/TextSettings"
+
+            android:gravity="center"
+            app:layout_column="0"
+            app:layout_row="6" />
+
+        <TextView
+            android:id="@+id/Tip_Number_Amount"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Lbl_Tip_Number"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="1"
+            app:layout_row="6" />
+
+        <TextView
+            android:id="@+id/Total_Amount"
+            android:layout_width="130dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:text="@string/Lbl_Total_Number"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="1"
+            app:layout_row="7" />
+
+        <TextView
+            android:id="@+id/Lbl_Total"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Lbl_Total"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="0"
+            app:layout_row="7" />
+
+        <TextView
+            android:id="@+id/Lbl_Rounding"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="@string/Lbl_Round"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="0"
+            app:layout_row="8" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            app:layout_column="1"
+            app:layout_row="8">
+
+            <RadioButton
+                android:id="@+id/Radio_RoundNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:checked="true"
+                android:text="@string/Radio_None" />
+
+            <RadioButton
+                android:id="@+id/Radio_RoundNTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="@string/Radio_Tip" />
+
+            <RadioButton
+                android:id="@+id/Radio_RoundNTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="@string/Radio_Total" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Lbl_SplitBil"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Lbl_SplitBill"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="0"
+            app:layout_row="9" />
+
+        <Spinner
+            android:id="@+id/spinner_DropBox"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_column="1"
+            app:layout_columnSpan="3"
+            app:layout_row="9" />
+
+        <TextView
+            android:id="@+id/Lbl_PerPerson"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/Lbl_Person"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="0"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/Per_Person_Amount"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="@string/PerPersonAmount"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="1"
+            app:layout_row="10" />
+
+        <Button
+            android:id="@+id/Btn_Apply"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:text="@string/Lbl_Apply"
+            android:textSize="@dimen/TextSettings"
+            app:layout_column="0"
+            app:layout_columnSpan="4"
+            android:textColor="#ffffff"
+            android:background="#fe3800"
+            app:layout_row="11" />
+
+
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>
