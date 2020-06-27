@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">M07 .0</string>
+    <string name="c">Sub Total</string>
+    <string name="cg">Discount Percent</string>
+    <string name="Lbl_DiscountAmount">Discount Amount</string>
+    <string name="Lbl_Total">Total</string>
+    <string name="lbl_Input_Amount">Enter Amount</string>
+    <string name="Percent_Amount">0%</string>
+    <string name="Discount_Amount">0.00</string>
+    <string name="TotalAmount">$0.00</string>
+    <string name="Discont_Amount">$0.00</string>
+    <string name="CalcBtn">Apply</string>
+    <string name="EnterAmt">Enter Amount</string>
+    <string name="lbl_Iput_Amount">Enter Amount</string>
+    <string name="EnterAmount">Enter Amount</string>
+</resources>

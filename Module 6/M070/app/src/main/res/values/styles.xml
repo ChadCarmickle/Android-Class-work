@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    // WillyWonka font
+
+    <style name="WillyWonkaFont" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/willywonka_font</item>
+    </style>
+
+
+    // Vampire font
+    <style name="VampireFont" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/vampire_font</item>
+    </style>
+
+    // Teenage Turtle font
+    <style name="Turtles" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/turtles</item>
+    </style>
+
+    // Numbers font
+    <style name="NumbersFont" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/number_font</item>
+    </style>
+
+    // nickelodeon font
+    <style name="nickelodeon" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/nickelodeon_font</item>
+    </style>
+
+    <style name="DarkHeart_Font" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/darkheart_font</item>
+    </style>
+
+
+// Spooky font
+<style name="Spooky_Font" >
+    <item name="android:textSize">15sp</item>
+    <item name="android:fontFamily">@font/spooky_font</item>
+</style>
+
+
+</resources>
