@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadingActivity"
+    android:background="@color/Background">
+
+
+    <TextView
+        android:id="@+id/Logo_Text_Loading"
+        style="@style/App_Font"
+        android:layout_width="320dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/textview"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo_Loading" />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/MainGif"
+        android:layout_width="311dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Background"
+        android:src="@drawable/bmo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoadingGif"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Logo_Loading"
+        android:layout_width="239dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/App_Font"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/LoadingGif"
+        android:layout_width="174dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/Background"
+        android:src="@drawable/loading_gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo_Text_Loading" />
+</android.support.constraint.ConstraintLayout>
