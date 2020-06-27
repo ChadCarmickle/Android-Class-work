@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Chad\'s Android Essay Application</string>
+    <string name="Facts">Sources</string>
+    <string name="Me">Creator</string>
+    <string name="nextlbl">Next</string>
+    <string name="backlbl">Back</string>
+    <string name="aaa">Android Essay App</string>
+    <string name="intro">Intro</string>
+    <string name="moblellbl">Mobile Computing</string>
+    <string name="introandroid">Intro to Android</string>
+    <string name="creators">Android Creators</string>
+    <string name="end">Conclusion</string>
+    <string name="android">Android Creator\'s</string>
+</resources>

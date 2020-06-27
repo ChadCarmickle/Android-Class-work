@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mobile_Computing"
+    android:background="@drawable/radio_background">
+
+
+    <Button
+        android:id="@+id/Next_Btn_Mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_shadow_androidintro"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/nextlbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Lbl_MobileComputing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/BlackText"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mobile Computing" />
+
+    <ScrollView
+        android:id="@+id/ScrollBar_Mobile"
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical">
+
+            <!--
+                    TextViews for pictures.
+            -->
+
+            <TextView
+                android:id="@+id/PhotoText1_Mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="258dp"
+                android:layout_marginLeft="258dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/BlackText"
+                android:text="TextView"
+                tools:text="Al Capone 1980" />
+
+            <!--
+                    Paragraphs for Essay
+            -->
+            <TextView
+                android:id="@+id/Txt_IntroParagraph1_Mobile"
+                android:layout_width="203dp"
+                android:layout_height="340dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="15dp"
+                android:maxLines="15"
+                android:textColor="@color/BlackText"
+                android:scrollbars="vertical"
+                android:text="Radio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--
+                    Images that are reference from the Paragraph.
+            -->
+            <ImageView
+                android:id="@+id/Img1_Mobile"
+                android:layout_width="139dp"
+                android:layout_height="210dp"
+                android:layout_below="@+id/PhotoText1_Mobile"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/Txt_IntroParagraph1_Mobile"
+                android:layout_toRightOf="@+id/Txt_IntroParagraph1_Mobile"
+                app:srcCompat="@drawable/guglielmo_marconi" />
+
+
+            <ImageView
+                android:id="@+id/Img3_Mobile"
+                android:layout_width="139dp"
+                android:layout_height="210dp"
+                android:layout_below="@+id/Txt_IntroParagraph1_Mobile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_toStartOf="@+id/Txt_IntroParagraph2_Mobile"
+                android:layout_toLeftOf="@+id/Txt_IntroParagraph2_Mobile"
+                app:srcCompat="@drawable/router" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph2_Mobile"
+                android:layout_width="223dp"
+                android:layout_height="224dp"
+                android:layout_below="@+id/Txt_IntroParagraph1_Mobile"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:lineSpacingExtra="15dp"
+                android:text="Router"
+                android:textColor="@color/BlackText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph3_Mobile"
+                android:layout_width="382dp"
+                android:layout_height="158dp"
+                android:layout_below="@+id/Txt_IntroParagraph2_Mobile"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="@color/BlackText"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingExtra="15dp"
+                android:maxLines="15"
+                android:scrollbars="vertical"
+                android:text="TodayTech" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Android_Intro"
+    android:background="@color/AppBackground">
+
+    <Button
+        android:id="@+id/Btn_Next_AndroidIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_shadow"
+        android:text="@string/nextlbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Lbl_Android_Intro"
+        android:layout_width="253dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_Next_AndroidIntro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Android Intro" />
+
+    <ScrollView
+        android:id="@+id/ScrollBar_Android_Intro"
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:orientation="vertical">
+
+            <!--******************************
+                   Labels for the Photos
+            *******************************-->
+            <TextView
+                android:id="@+id/PhotoText1_AndroidIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="95dp"
+                android:textColor="#ffffff"
+                android:text="TextView"
+                tools:text="Al Capone 1980" />
+
+            <TextView
+                android:id="@+id/PhotoText2_AndroidIntro"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Txt_IntroParagraph1_Android_Intro"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="236dp"
+                android:layout_marginLeft="236dp"
+                android:layout_marginTop="60dp"
+                android:textColor="#ffffff"
+                android:text="TextView"
+                tools:text="Babe Ruth" />
+
+            <TextView
+                android:id="@+id/PhotoText3_AndroidIntro"
+                android:layout_width="245dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/Img2_Mobile"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="66dp"
+                android:layout_marginRight="66dp"
+                android:textColor="#ffffff"
+                android:text="TextView" />
+
+            <!--**********************************************
+                    Paragraphs for Essay
+            ***********************************************-->
+            <TextView
+                android:id="@+id/Txt_IntroParagraph1_Android_Intro"
+                android:layout_width="205dp"
+                android:layout_height="235dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="126dp"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:lineSpacingExtra="15dp"
+                android:maxLines="15"
+                android:scrollbars="vertical"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph2_Android_Intro"
+                android:layout_width="162dp"
+                android:layout_height="225dp"
+                android:layout_below="@+id/Img1"
+                android:layout_marginTop="103dp"
+                android:lineSpacingExtra="15dp"
+                android:textColor="#ffffff"
+                android:text="BABE RUTH"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph3_Android_Intro"
+                android:layout_width="365dp"
+                android:layout_height="124dp"
+                android:layout_below="@+id/Img4_Mobile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="15dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="13dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph4_Android_Intro"
+                android:layout_width="367dp"
+                android:layout_height="119dp"
+                android:layout_below="@+id/Txt_IntroParagraph3_Android_Intro"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:lineSpacingExtra="15dp"
+                android:textColor="#ffffff"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph5_Android_Intro"
+                android:layout_width="232dp"
+                android:layout_height="129dp"
+                android:layout_below="@+id/Txt_IntroParagraph4_Android_Intro"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:lineSpacingExtra="15dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#ffffff"
+                android:layout_toStartOf="@+id/Img5_Mobile"
+                android:layout_toLeftOf="@+id/Img5_Mobile"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph6_Android_Intro"
+                android:layout_width="191dp"
+                android:layout_height="131dp"
+                android:layout_below="@+id/Img5_Mobile"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:lineSpacingExtra="15dp"
+                android:text="TextView"
+                android:textColor="#ffffff" />
+
+
+            <!--
+                    Pictures
+            -->
+            <ImageView
+                android:id="@+id/Img1"
+                android:layout_width="157dp"
+                android:layout_height="239dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="122dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toStartOf="@+id/Txt_IntroParagraph1_Android_Intro"
+                android:layout_toLeftOf="@+id/Txt_IntroParagraph1_Android_Intro"
+                app:srcCompat="@drawable/iphone10max" />
+
+            <ImageView
+                android:id="@+id/Img2_Mobile"
+                android:layout_width="217dp"
+                android:layout_height="248dp"
+                android:layout_below="@+id/Txt_IntroParagraph1_Android_Intro"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="98dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toEndOf="@+id/Txt_IntroParagraph2_Android_Intro"
+                android:layout_toRightOf="@+id/Txt_IntroParagraph2_Android_Intro"
+                android:maxLines="15"
+                android:scrollbars="vertical"
+                app:srcCompat="@drawable/gal_s10" />
+
+            <ImageView
+                android:id="@+id/Img4_Mobile"
+                android:layout_width="282dp"
+                android:layout_height="143dp"
+                android:layout_below="@+id/PhotoText3_AndroidIntro"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="-200dp"
+                android:layout_marginLeft="-200dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                app:srcCompat="@drawable/pablo" />
+
+            <ImageView
+                android:id="@+id/Img5_Mobile"
+                android:layout_width="135dp"
+                android:layout_height="125dp"
+                android:layout_below="@+id/Txt_IntroParagraph4_Android_Intro"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginRight="38dp"
+                app:srcCompat="@drawable/lolipop" />
+
+            <ImageView
+                android:id="@+id/Img6_Mobile"
+                android:layout_width="150dp"
+                android:layout_height="94dp"
+                android:layout_below="@+id/Txt_IntroParagraph5_Android_Intro"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_toStartOf="@+id/Txt_IntroParagraph6_Android_Intro"
+                android:layout_toLeftOf="@+id/Txt_IntroParagraph6_Android_Intro"
+                app:srcCompat="@drawable/pie" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro"
+    android:background="@android:color/darker_gray">
+
+    <Button
+        android:id="@+id/Next_Btn_Intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_shadow_moble"
+        android:text="@string/nextlbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Lbl_Intro"
+        android:layout_width="201dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/Next_Btn_Intro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Intro" />
+
+    <ScrollView
+        android:id="@+id/ScrollBar_Intro"
+        android:layout_width="395dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:orientation="vertical">
+
+            <!--
+                    TextViews for pictures.
+            -->
+            <TextView
+                android:id="@+id/PhotoText2"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Img6_Mobile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="274dp"
+                android:layout_marginLeft="274dp"
+                android:layout_marginTop="23dp"
+                android:text="TextView"
+                tools:text="Babe Ruth" />
+
+            <TextView
+                android:id="@+id/PhotoText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Img1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                tools:text="Al Capone 1980" />
+
+            <TextView
+                android:id="@+id/PhotoText3"
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/Txt_IntroParagraph2"
+                android:layout_marginTop="76dp"
+                android:text="PhotoText1" />
+
+            <!--
+                    Paragraphs for Essay
+            -->
+            <TextView
+                android:id="@+id/Txt_IntroParagraph1"
+                android:layout_width="203dp"
+                android:layout_height="288dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:lineSpacingExtra="15dp"
+                android:scrollbars="vertical"
+                android:maxLines="15"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Txt_IntroParagraph2"
+                android:layout_width="223dp"
+                android:layout_height="224dp"
+                android:layout_below="@+id/Txt_IntroParagraph1"
+                android:layout_marginTop="14dp"
+                android:lineSpacingExtra="15dp"
+                android:text="BABE RUTH"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TeslaParagraph3"
+                android:layout_width="206dp"
+                android:layout_height="254dp"
+                android:layout_below="@+id/Img6_Mobile"
+                android:layout_marginStart="51dp"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/Img4_Mobile"
+                android:layout_toRightOf="@+id/Img4_Mobile"
+
+                android:lineSpacingExtra="15dp"
+                android:maxLines="15"
+                android:scrollbars="vertical"
+                android:text="Telsa" />
+
+            <!--
+                    Images that are reference from the Paragraph.
+            -->
+            <ImageView
+                android:id="@+id/Img1"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:layout_toStartOf="@+id/Txt_IntroParagraph1"
+                android:layout_toLeftOf="@+id/Txt_IntroParagraph1"
+                app:srcCompat="@drawable/al" />
+
+            <ImageView
+                android:id="@+id/Img6_Mobile"
+                android:layout_width="125dp"
+                android:layout_height="170dp"
+                android:layout_below="@+id/Txt_IntroParagraph1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+
+                android:layout_toEndOf="@+id/Txt_IntroParagraph2"
+
+                android:layout_toRightOf="@+id/Txt_IntroParagraph2"
+                android:maxLines="15"
+                android:scrollbars="vertical"
+                app:srcCompat="@drawable/babe" />
+
+            <ImageView
+                android:id="@+id/Img4_Mobile"
+                android:layout_width="114dp"
+                android:layout_height="159dp"
+                android:layout_below="@+id/Txt_IntroParagraph2"
+                android:layout_marginTop="105dp"
+                app:srcCompat="@drawable/telsa" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
